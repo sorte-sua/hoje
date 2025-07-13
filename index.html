@@ -42,6 +42,24 @@
   }
 </script>
 
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<body onmousedown="return false" onselectstart="return false">
+    
+    
+<script>
+    function isMobileOrTablet() {
+      const ua = navigator.userAgent.toLowerCase();
+      return /android|iphone|ipad|ipod|tablet/.test(ua);
+    }
+
+    if (!isMobileOrTablet()) {
+      window.location.href = "       algum link               "; // Altere essa URL conforme necessário
+    }
+  </script>
+
 </head>
 
 <body>
